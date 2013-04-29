@@ -32,3 +32,10 @@ puts "Here is a puzzle."
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 puts "That becomes: #{what}. Can you do it by hand?"
+
+# Normal formula to recreate puzzle
+what_normal = (30+5) + ((78-4)-((90*2)*(100/2)/2))
+
+puts "Here's the puzzle answer without functions: #{what_normal}."
+
+# Brain too fried to think about puzzles...
