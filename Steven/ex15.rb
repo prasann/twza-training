@@ -5,9 +5,9 @@ txt = File.open(filename) # This statement opens up the file. This file must be 
 puts "Here is your file: #{filename}" #This statement just displays the file name as per the runtime input
 puts txt.read() #This statemenr reads the content of the file. The all content.
 
-puts "I will ask you again the same file :"
-print prompt
-filen = STDIN.gets.chomp()
+# puts "I will ask you again the same file :"
+# print prompt
+# filen = STDIN.gets.chomp()
 
-txt_again = File.open(filen)
-puts txt_again.read
+# txt_again = File.open(filen)
+# puts txt_again.read
