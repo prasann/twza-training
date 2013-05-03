@@ -5,6 +5,9 @@ def cheese_and_crackers(chees_count, box_of_crackers)
 	puts "Get a blanket."
 	puts
 end
+def calc
+	3
+end
 puts "We can just functions numbers directly:"
 cheese_and_crackers(20,30)
 puts
@@ -14,9 +17,13 @@ amount_of_crackers = 50
 cheese_and_crackers(amount_of_cheese,amount_of_crackers)
 puts
 puts "We can even do math inside too"
-cheese_and_crackers(4+3,9+3)
-puts
+cheese_and_crackers(4+3,calc)
+puts '<<<<<<<<<<<<<<<<<<<<'
 puts "And we can combine both variables and numbers :"
 cheese_and_crackers(amount_of_cheese+10, amount_of_crackers+20)
 puts
+
+
+
+
 

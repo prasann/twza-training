@@ -1,6 +1,6 @@
 def puts_two(*args)
 
-	arg1, arg2 = args
+	arg1, arg2 = 4
 	puts "args1: #{arg1}, args2: #{arg2}"
 end
 
@@ -16,6 +16,6 @@ def puts_none()
 	
 end
 puts_two "Steven", "Ndaye"
-puts_two_again("Ndaye","Steven")
+puts_two_again("Ndaye")
 puts_one("Wole")
 puts_none()
