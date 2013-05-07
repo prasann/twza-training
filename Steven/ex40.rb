@@ -1,11 +1,11 @@
 class Song
 
 	def initialize(lyrics)
-		@lyrics = lyrics
+		lyrics = lyrics
 	end
 
 	def sing_me_a_song()
-		for line in @lyrics
+		for line in lyrics
 
 			puts line
 		end

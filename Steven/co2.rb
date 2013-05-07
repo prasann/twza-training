@@ -1,22 +1,22 @@
 class Animal
 
 	def initialize(color)
-		@color = color
+		color = color
 	end
 
 	protected
 	def get_color
-		@color
+		color
 	end
 end
 
 class Dog < Animal
 	def initialize(color)
-		@animal = Animal.new(color)
+		animal = Animal.new(color)
 	end	
 
 	def get_info
-		@animal.get_color
+		animal.get_color
 	end
 end
 

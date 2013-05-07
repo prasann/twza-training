@@ -1,20 +1,20 @@
 class Animal
 
 	def initialize(color)
-		@color = color
+		color = color
 	end
 	def get_color
-		@color
+		color
 	end
 end
 
 class Dog < Animal
 	def initialize(color, sound)
 		super(color)
-		@sound = sound
+		sound = sound
 	end	
 	def get_sound
-		@sound
+		sound
 	end
 end
 

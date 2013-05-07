@@ -1,11 +1,11 @@
 class Game
 	def initialize (start)
-		@quips = ["You died. You kinda suck at this.",
+		quips = ["You died. You kinda suck at this.",
 			"NIce job, you died ...jackass.",
 			"Such a looser.",
 			"I have a small puppy that's better at this."
 		]
-		@start = start
+		start = start
 	end
 
 	def prompt()
@@ -13,7 +13,7 @@ class Game
 	end
 
 	def play()
-		next_room = @start
+		next_room = start
 
 		while true
 
@@ -24,7 +24,7 @@ class Game
 	end
 
 	def death()
-		puts @quips[rand(@quips.length())]
+		puts quips[rand(quips.length())]
 		Process.exit(1)
 	end
 

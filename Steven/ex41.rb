@@ -5,10 +5,10 @@ WORDS = []
 
 PHRASES = {
 	"class ### < ###\nend" => "Make a class named ### that is-a ###.",
-	"class ###\n\tdef initialiaze(@@@)\n\tend\nend" => "class ### has-a initialiaze that takes @@@ parameters.",
-	"class ###\n\tdef ***(@@@)\n\tend\nend" => "class ### has-a function named *** that takes @@@ parameters.",
+	"class ###\n\tdef initialiaze()\n\tend\nend" => "class ### has-a initialiaze that takes  parameters.",
+	"class ###\n\tdef ***()\n\tend\nend" => "class ### has-a function named *** that takes  parameters.",
 	"*** = ###.new()" => "Set *** to an instance of class ###.",
-	"***.***(@@@)" => "From *** get the *** function, and call it with parameters @@@.",
+	"***.***()" => "From *** get the *** function, and call it with parameters .",
 	"***.*** = '***'" => "From *** get the *** attribute and set it to '***'."
 }
 
@@ -42,7 +42,7 @@ def convert(snippet, phrase)
 	rand_words = WORDS.sort_by {rand}
 	class_mames = craft_names(rand_words, snippet, /###/, caps=true)
 	other_names = craft_names(rand_words, snippet, /\*\*\*/)
-	param_names = craft_params(rand_words, snippet, /@@@/)
+	param_names = craft_params(rand_words, snippet, //)
 
 	results = []
 
@@ -52,7 +52,7 @@ def convert(snippet, phrase)
 
 		result.gsub!(/\*\*\*/) {|x| other_names.pop}
 
-		result.gsub!(/@@@/) {|x| param_names.pop}
+		result.gsub!(//) {|x| param_names.pop}
 
 		results.push(result)
 	end

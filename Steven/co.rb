@@ -1,33 +1,33 @@
 class Animal
 	# def initialize
-	# 	@color = "red"
+	# 	color = "red"
 	# end
 
 	# def initialize(color)
-	# 	@color = color
+	# 	color = color
 	# end
 
 	attr_reader :color
 	attr_writer :color
 	def initialize(*args)
 		if args.size == 0
-			@color = "red"
+			color = "red"
 		elsif args.size == 1
-			@color = args
+			color = args
 		end
 	end
 
 	def get_color
-		return @color
+		return color
 	end
 
 	#################################
 	# def color #get method
-	# 	@color
+	# 	color
 	# end
 
 	# def color=(color) #set method
-	# 	@color = color
+	# 	color = color
 	# end
 	##################################
 end
